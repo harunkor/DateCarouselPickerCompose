@@ -32,10 +32,25 @@ android {
                 create<MavenPublication>("release") {
                     from(components["release"])
 
-                    // JitPack koordinatları: com.github.<User>:<Artifact>:<Tag>
+                    // JitPack koordinatları:
+                    // groupId her zaman: com.github.<GitHubUser>
+                    // artifactId: istediğin isim (repo veya modül adıyla karıştırma)
+                    // version: JitPack'te TAG olacak
                     groupId = "com.github.harunkor"
-                    artifactId = "datecarousel"        // istediğin ad
-                    version = "1.0.0"                   // JitPack’te TAG ile de belirlenir
+                    artifactId = "DateCarouselPickerCompose" // istersen "datecarousel" yap, sen karar ver
+                    version = "v0.1.0" // TAG ile aynı olacak (aşağıda tag atacağız)
+
+                    pom {
+                        name.set("DateCarouselPickerCompose")
+                        description.set("A Jetpack Compose horizontal date picker carousel.")
+                        url.set("https://github.com/harunkor/DateCarouselPickerCompose")
+                        licenses {
+                            license {
+                                name.set("MIT License")
+                                url.set("https://opensource.org/licenses/MIT")
+                            }
+                        }
+                    }
                 }
             }
         }
