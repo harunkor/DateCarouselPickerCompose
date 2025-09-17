@@ -42,7 +42,7 @@ dependencyResolutionManagement {
 ```kotlin
 build.gradle.kts 
 dependencies {
-    implementation("com.github.harunkor:DateCarouselPickerCompose:v1.0.0") // ← use your latest tag
+    implementation("com.github.harunkor:DateCarouselPickerCompose:v0.1.0") // ← use your latest tag
 }
 ```
 
