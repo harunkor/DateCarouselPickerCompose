@@ -38,7 +38,7 @@ android {
                     // version: JitPack'te TAG olacak
                     groupId = "com.github.harunkor"
                     artifactId = "DateCarouselPickerCompose" // istersen "datecarousel" yap, sen karar ver
-                    version = "v0.1.0" // TAG ile aynı olacak (aşağıda tag atacağız)
+                    version = "v0.1.1" // TAG ile aynı olacak (aşağıda tag atacağız)
 
                     pom {
                         name.set("DateCarouselPickerCompose")
