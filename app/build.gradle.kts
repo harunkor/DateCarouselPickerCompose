@@ -59,7 +59,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     //DateCarouselPickerCompose
-    implementation(project(":datecarousel"))
+    implementation("com.github.harunkor:DateCarouselPickerCompose:v0.1.1")
 
     //coreLibrary
     coreLibraryDesugaring(libs.desugar.jdk.libs)
